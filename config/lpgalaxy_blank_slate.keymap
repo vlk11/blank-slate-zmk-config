@@ -42,6 +42,44 @@
 		tap-ms = <5>;
                 bindings = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>;
 		)
+      pw01: pw01 { // 0127
+		compatible = "zmk,behavior-macro";
+		#binding-cells = <0>;
+		bindings
+                = <&kp N0>
+		, <&kp N1>
+		, <&kp N2>
+		, <&kp N7>
+		;
+		};      
+
+      pw02: pw02 { // eleven11!
+		compatible = "zmk,behavior-macro";
+		#binding-cells = <0>;
+		bindings
+                = <&kp E>
+		, <&kp L>
+		, <&kp E>	
+		, <&kp V>
+		, <&kp E>
+		, <&kp N>
+		, <&kp N1>
+		, <&kp N1>
+		, <&kp EXCL>
+		;
+		};
+
+      sleep: sleep {
+		compatible = "zmk,behavior-macro";
+		#binding-cells = <0>;
+		bindings
+		= <&kp LG(X)>
+		, <&macro_wait_time 10>
+		, <&kp U>
+		, <&macro_wait_time 10>
+		, <&kp S>
+		;
+		};
     };
     
     tap_dances {
@@ -138,6 +176,15 @@
             >;
         };
 
+        spc_layer {
+            label = "Special";
+            status = "reserved";
+        };
+
+        ex_layer {
+            label = "Extra";
+            status = "reserved";
+        };
 
     };
 };
