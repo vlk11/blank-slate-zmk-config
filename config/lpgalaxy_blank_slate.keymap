@@ -143,7 +143,7 @@
 #elif defined(TBLE_MIT)
 	&trans		&trans		&trans		&trans		&trans		       &trans			&trans		&trans		&trans		&trans		&trans
 #else
-	&trans		&trans		&none		&mo SYM_L	&trans		&trans		&trans		&trans		&kp N0		&kp COMMA	&kp DOT		&mo SYM_L
+	&trans		&trans		&mo SYM_L	&none	&trans		&trans		&trans		&trans		&kp N0		&kp COMMA	&kp DOT		&mo SYM_L
 #endif
             >;
         };
@@ -159,7 +159,7 @@
 #elif defined(TBLE_MIT)
 	&trans		&trans		&trans		&trans		&trans		       &trans			&trans		&trans		&trans		&trans		&trans
 #else
-	&trans		&trans		&mo SYM_L	&none		&trans		&trans		&trans		&trans		&kp F10		&kp F11		&kp F12		&none
+	&trans		&trans		&none		&mo SYM_L	&trans		&trans		&trans		&trans		&kp F10		&kp F11		&kp F12		&none
 #endif
             >;
         };
