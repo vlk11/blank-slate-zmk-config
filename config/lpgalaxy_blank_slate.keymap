@@ -191,7 +191,7 @@
 #elif defined(TBLE_MIT)
 	&none		&none		&none		&none		&none		        &none			&none		&none		&none		&none		&none
 #else
-	&none		&none		&none		&none		&none		&kp LA(F4)	&none		&none		&none		&pw01		&pw02		&none
+	&none		&none		&none		&none		&none		&none		&kp LA(F4)	&none		&none		&pw01		&pw02		&none
 #endif
             >;
         };
@@ -207,7 +207,7 @@
 #elif defined(TBLE_MIT)
 	&none		&none		&none		&none		&none		        &none			&none		&none		&none		&none		&none
 #else
-	&none		&none		&none		&none		&none		&none	&none		&none		&none		&none		&none		&none
+	&none		&none		&none		&none		&none		&none		&none		&none		&none		&none		&none		&none
 #endif
 
             >;
