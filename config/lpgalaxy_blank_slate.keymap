@@ -127,7 +127,7 @@
 #elif defined(TBLE_MIT)
 	&trans		&trans		&trans		&trans		&trans		       &trans			&trans		&trans		&trans		&trans		&trans
 #else
-	&kp LALT	&mo LGUI	&mo NUM_L	&mo NAV_L	&kp ENTER	&kp SPACE	&kp BSPC	&kp DEL		&mo MAC_L	&kp K_APP	&kp LANG1	&mo NUM_L
+	&kp LALT	&kp LGUI	&mo NUM_L	&mo NAV_L	&kp ENTER	&kp SPACE	&kp BSPC	&kp DEL		&mo MAC_L	&kp K_APP	&kp LANG1	&mo NUM_L
 #endif
             >;
         };
