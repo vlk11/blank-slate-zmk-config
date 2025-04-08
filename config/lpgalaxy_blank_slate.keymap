@@ -108,6 +108,15 @@
     };
 #endif
 
+    behaviors {
+        tlesc: tilde_escape {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp TILDE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -115,7 +124,7 @@
             label = "Base";
             bindings = <
 #ifdef QWERTY_BASE
-	&kp TAB		&kp Q		&kp W		&kp E		&kp R		&kp T		&kp Y		&kp U		&kp I		&kp O		&kp P		&gresc
+	&kp TAB		&kp Q		&kp W		&kp E		&kp R		&kp T		&kp Y		&kp U		&kp I		&kp O		&kp P		&tlesc
 	&kp LCTRL	&kp A		&kp S		&kp D		&kp F		&kp G		&kp H		&kp J		&kp K		&kp L		&kp SEMI	&kp QUOT
 	&kp LSHFT	&kp FSLH	&kp Z		&kp X		&kp C		&kp V		&kp B		&kp N		&kp M		&kp COMMA	&kp DOT		&mo NAV_L
 #else
