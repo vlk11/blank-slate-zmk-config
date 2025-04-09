@@ -79,9 +79,7 @@
 		#binding-cells = <0>;
 		bindings
 		= <&kp LG(X)>
-		, <&macro_wait_time 10>
 		, <&kp U>
-		, <&macro_wait_time 10>
 		, <&kp S>
 		;
 		};
@@ -201,25 +199,8 @@
 #elif defined(TBLE_MIT)
 	&none		&none		&none		&none		&none		        &none			&none		&none		&none		&none		&none
 #else
-	&none		&none		&none		&none		&none		&none		&kp LA(F4)	&none		&none		&pw01		&pw02us		&none
+	&none		&none		&none		&none		&none		&none		&kp LA(F4)	&none		&none		&pw01		&pw02		&none
 #endif
-            >;
-        };
-
-        ex_layer {
-            label = "Extra";
-            bindings = <
-	&none		&none		&none		&none		&none		&none		&none		&none		&none		&none		&none		&none
-	&none		&none		&none		&none		&none		&none		&none		&none		&none		&none		&none		&none
-	&none		&none		&none		&none		&none		&none		&none		&none		&none		&none		&none		&none
-#ifdef TBLE_DUAL_2U
-	&none		&none		&none		&none		        &none		                &none			&none		&none		&none		&none
-#elif defined(TBLE_MIT)
-	&none		&none		&none		&none		&none		        &none			&none		&none		&none		&none		&none
-#else
-	&none		&none		&none		&none		&none		&none		&none		&none		&none		&none		&none		&none
-#endif
-
             >;
         };
 
