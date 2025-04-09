@@ -128,7 +128,7 @@
 	&kp LCTRL	&kp A		&kp S		&kp D		&kp F		&kp G		&kp H		&kp J		&kp K		&kp L		&kp SEMI	&kp QUOT
 	&kp LSHFT	&kp FSLH	&kp Z		&kp X		&kp C		&kp V		&kp B		&kp N		&kp M		&kp COMMA	&kp DOT		&mo NAV_L
 #else
-	&kp TAB		&kp Q		&kp W		&kp E		&kp R		&kp T		&kp Y		&kp U		&kp I		&kp O		&kp P		&gresc
+	&kp TAB		&kp Q		&kp W		&kp E		&kp R		&kp T		&kp Y		&kp U		&kp I		&kp O		&kp P		&tlesc
 	&kp LCTRL	&kp A		&kp S		&kp D		&kp F		&kp G		&kp H		&kp J		&kp K		&kp L		&kp SEMI	&kp QUOT
 	&kp LSHFT	&kp FSLH	&kp Z		&kp X		&kp C		&kp V		&kp B		&kp N		&kp M		&kp COMMA	&kp DOT		&mo NAV_L
 #endif
@@ -153,7 +153,7 @@
 #elif defined(TBLE_MIT)
 	&trans		&trans		&trans		&trans		&trans		       &trans			&trans		&trans		&trans		&trans		&trans
 #else
-	&trans		&trans		&mo SYM_L	&none	&trans		&trans		&trans		&trans		&kp N0		&kp COMMA	&kp DOT		&mo SYM_L
+	&trans		&trans		&mo SYM_L	&none		&trans		&trans		&trans		&trans		&kp N0		&kp DOT		&kp COMMA	&mo SYM_L
 #endif
             >;
         };
@@ -201,7 +201,7 @@
 #elif defined(TBLE_MIT)
 	&none		&none		&none		&none		&none		        &none			&none		&none		&none		&none		&none
 #else
-	&none		&none		&none		&none		&none		&none		&kp LA(F4)	&none		&none		&pw01		&pw02		&none
+	&none		&none		&none		&none		&none		&none		&kp LA(F4)	&none		&none		&pw01		&pw02us		&none
 #endif
             >;
         };
