@@ -29,7 +29,10 @@
 
 #define BT(n) BT_SEL n
 
+
+
 / {
+
     chosen {
        zmk,physical-layout =
 #ifdef TBLE_DUAL_2U
@@ -41,12 +44,16 @@
 #endif
     };
 
+
+
     macros {
+
       ZMK_MACRO(thumbs_up,
 		wait-ms = <1>;
 		tap-ms = <5>;
                 bindings = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>;
 		)
+
       pw01: pw01 { // 0127
 		compatible = "zmk,behavior-macro";
 		#binding-cells = <0>;
@@ -74,6 +81,46 @@
 		;
 		};
 
+      email: email { // vlk11@naver.com
+		compatible = "zmk,behavior-macro";
+		#binding-cells = <0>;
+		bindings
+                = <&kp V>
+		, <&kp L>
+		, <&kp K>	
+		, <&kp N1>
+		, <&kp N1>
+		, <&kp LS(N2)>
+		, <&kp N>
+		, <&kp A>
+		, <&kp V>
+		, <&kp E>
+		, <&kp R>
+		, <&kp DOT>
+		, <&kp C>
+		, <&kp O>
+		, <&kp M>
+		;
+		};
+
+      phone: phone { // 01030126580
+		compatible = "zmk,behavior-macro";
+		#binding-cells = <0>;
+		bindings
+                = <&kp N0>
+		, <&kp N1>
+		, <&kp N0>	
+		, <&kp N3>
+		, <&kp N0>
+		, <&kp N1>
+		, <&kp N2>
+		, <&kp N6>
+		, <&kp N5>
+		, <&kp N8>
+		, <&kp N0>
+		;
+		};
+
       sleep: sleep {
 		compatible = "zmk,behavior-macro";
 		#binding-cells = <0>;
@@ -84,7 +131,9 @@
 		;
 		};
     };
-    
+
+
+
     tap_dances {
     	shifty: shift_caps_word {
 		compatible = "zmk,behavior-tap-dance";
@@ -94,6 +143,8 @@
 		bindings = <&kp LSHFT>, <&caps_word>;
 	};
     };
+
+
 
 // Conditional layer only when we have less thumb keys
 #ifdef TBLE_DUAL_2U
@@ -114,6 +165,8 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
+
+
 
     keymap {
         compatible = "zmk,keymap";
@@ -199,7 +252,7 @@
 #elif defined(TBLE_MIT)
 	&none		&none		&none		&none		&none		        &none			&none		&none		&none		&none		&none
 #else
-	&none		&none		&none		&none		&none		&none		&kp LA(F4)	&none		&none		&pw01		&pw02		&none
+	&none		&email		&phone		&none		&none		&none		&kp LA(F4)	&none		&none		&pw01		&pw02		&none
 #endif
             >;
         };
