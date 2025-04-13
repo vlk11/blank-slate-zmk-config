@@ -11,6 +11,15 @@
 
 #include <dt-bindings/zmk/pointing.h>
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
+
+&mmv {
+	trigger-period-ms = <8>;
+};
+
+&msc {
+	rigger-period-ms = <8>;
+};
 
 #define QWERTY_BASE 1
 
@@ -125,7 +134,8 @@
 		compatible = "zmk,behavior-macro";
 		#binding-cells = <0>;
 		bindings
-		= <&kp LG(X)>
+		= <&kp LGUI>
+		, <&kp LG(X)>
 		, <&kp U>
 		, <&kp S>
 		;
