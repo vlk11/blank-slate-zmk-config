@@ -135,6 +135,7 @@
 		#binding-cells = <0>;
 		bindings
 		= <&kp LGUI>
+		, <&kp LGUI>
 		, <&kp LG(X)>
 		, <&kp U>
 		, <&kp S>
